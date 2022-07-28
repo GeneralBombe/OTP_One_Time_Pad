@@ -33,6 +33,7 @@ int main()
   
 	char input[] = "GEHEIMTEXT";
 	int inputLaenge = std::strlen(input);
+	
 	std::cout << "String lenght: " << inputLaenge << std::endl;
 
 	std::vector<char> randomString;
@@ -77,6 +78,7 @@ int main()
 
 	
 
+
 	//Zufälliger Buchstabe
 	for (int i = 0; i < inputLaenge; i++) {
 		int randomAuswahl = rand () % 2;
@@ -95,8 +97,13 @@ int main()
 		
 	}
 	
-	std::cout << "Random String Size: " <<  randomString.size() << std::endl;
+	std::cout << "Random String: " << std::endl;
+	
+	for (int i = 0; i < inputLaenge; i++) {
+		std::cout << randomString[i];
+	}
 
+	std::cout << std::endl;
 
 
 	for (auto& celem : input) {
@@ -104,6 +111,9 @@ int main()
 		inputNumber.push_back((int) celem);
 	}
 	
+	std::cout << std::endl;
+
+
 	for (auto & celem : randomString) {
 		randomStringNumber.push_back((int) celem);
 	}
@@ -112,6 +122,7 @@ int main()
 	
 
 
+	std::cout << "Input Char Nummern: " << std::endl;
 
 	//Nummern Addieren der Vektoren
 
@@ -129,12 +140,17 @@ int main()
 		else {
 			randomStringNumber[i] = randomStringNumber[i] - 71;
 		}
-
+		std::cout << inputNumber[i] << " ";
 		outputInt.push_back(inputNumber[i] + randomStringNumber[i]);
 	}
 	
+	std::cout << std::endl;
+	std::cout << "Random Int \"String\": " << std::endl;
 	
-
+	for (int i = 0; i < inputLaenge; i++) {
+		std::cout << randomStringNumber[i] << " ";
+	}
+	std::cout << std::endl;
 
 	// % 52 um kein Overflow zu haben
 	for (auto& elm : outputInt) {
