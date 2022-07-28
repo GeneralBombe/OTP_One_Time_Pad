@@ -103,7 +103,6 @@ int main()
 		std::cout << randomString[i];
 	}
 
-	std::cout << std::endl;
 
 
 	for (auto& celem : input) {
