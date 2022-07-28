@@ -3,3 +3,5 @@ Onetime Board Verschlüsselung, gibt Key aus.
 Einfach input String als Input verwenden. 
 Input funktioniert nur mit Groß und Kleinbuchstaben. 
 Keine Zahlen, Sonderzeichen, etc. 
+
+Bitte IdexesBuchstaben.xlsx beachten.
